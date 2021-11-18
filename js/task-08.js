@@ -9,10 +9,11 @@ function onSubmit(event) {
   const passwordVal = event.currentTarget.elements.password.value;
 
   const formObj = { emailVal, passwordVal };
-  console.log(formObj);
 
   if (emailVal === "" || passwordVal === "") {
     return alert("Fill in all the fields!");
+  } else {
+    console.log(formObj);
   }
   event.currentTarget.reset();
 }
